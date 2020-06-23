@@ -22,6 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - uses: actions/checkout@v2
+    - name: Run npm install
+      run: npm install        
     - name: Lint Action
       uses: samuelmeuli/lint-action@v1.5.3
         
